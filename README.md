@@ -13,7 +13,8 @@ create table rabbit (id int) with ('connector'= 'rabbitmq', 'exchange-name'='tes
  ```
 
 ### Source:
-```create table rabbit (id int) with ('connector'= 'rabbitmq', 'queue-name'='test', 
+```
+create table rabbit (id int) with ('connector'= 'rabbitmq', 'queue-name'='test', 
  'host'='127.0.0.1', 'port'='5672', 'username'='user', 'password'='123',  
  'format'='json', 'virtual-host'='/test/');
 
